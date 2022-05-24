@@ -1,32 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@SweetBrioche 
-SweetBrioche
-/
-itde
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-itde/week11code.js /
-@SweetBrioche
-SweetBrioche Update week11code.js
-Latest commit 4e11b06 6 hours ago
- History
- 1 contributor
-58 lines (46 sloc)  1.51 KB
-   
 function init() {
 	 scene = new THREE.Scene();
 	 var WIDTH = window.innerWidth, HEIGHT = window.innerHeight;
@@ -85,15 +56,3 @@ function animate()
 	 renderer.render(scene, camera);
 	 requestAnimationFrame(animate);
 }
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
