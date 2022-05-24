@@ -10,7 +10,7 @@ function init() {
 	 document.body.appendChild(renderer.domElement);
 
 	 var camera=new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 20000);
-	 camera.position.z = 3000;
+	 camera.position.z = 2000;
 
 	 scene.add(camera);
 
