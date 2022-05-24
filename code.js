@@ -12,7 +12,7 @@ function init() {
 	 var camera=new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 20000);
 	 camera.position.z = 200;
 	camera.position.y = 200;
-	camera.position.x = -200;
+	camera.position.x = 200;
 
 	 scene.add(camera);
 
@@ -38,7 +38,7 @@ function init() {
 				}
 			})
 			scene.add(mesh);
-			mesh.position.set(-20, -50, -100);
+			mesh.position.set(-20, 100, -100);
 			mesh.rotation.y = -Math.PI/4;
 
 	});
