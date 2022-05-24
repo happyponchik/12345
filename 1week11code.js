@@ -10,7 +10,7 @@ function init() {
 	 document.body.appendChild(renderer.domElement);
 
 	 var camera=new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 0.1, 20000);
-	camera.position.z = 200;
+	 camera.position.z = 2000;
 
 	 scene.add(camera);
 
@@ -28,7 +28,7 @@ function init() {
 	scene.add(lightTwo);
 
 	 var objLoader = new THREE.OBJLoader();
-	objLoader.load("bed.obj", function(mesh){
+	 objLoader.load("bed.obj", function(mesh){
 			mesh.traverse(function(node){
 				if(node instanceof THREE.Mesh){
 					node.castShadow = true;
@@ -36,18 +36,17 @@ function init() {
 				}
 			})
 			scene.add(mesh);
-			mesh.position.set(-20, 50, -200);
+			mesh.position.set(-20, -250, -150);
 			mesh.rotation.y = -Math.PI/4;
 
 	});
 
 	requestAnimationFrame(render);
-
 	function render() {
 		renderer.render(scene, camera);
 		requestAnimationFrame(render);
 	}
-	 controls = new THREE.OrbitControls(camera,renderer.domElement);
+	controls = new THREE.OrbitControls(camera,renderer.domElement);
 }
 
 function animate()
