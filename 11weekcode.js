@@ -46,8 +46,8 @@ function init() {
 	function render() {
 		renderer.render(scene, camera);
 		requestAnimationFrame(render);
-	}
-	 controls = new THREE.OrbitControls(camera,renderer.domElement);*/
+	}*/
+	 controls = new THREE.OrbitControls(camera,renderer.domElement);
 }
 
 function animate()
