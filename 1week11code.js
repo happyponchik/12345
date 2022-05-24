@@ -9,7 +9,7 @@ function init() {
 
 	 document.body.appendChild(renderer.domElement);
 
-	 var camera=new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 0.1, 20000);
+	 var camera=new THREE.PerspectiveCamera(45, WIDTH/ HEIGHT, 0.1, 20000);
 	 camera.position.z = 2000;
 
 	 scene.add(camera);
@@ -18,7 +18,7 @@ function init() {
 	var WIDTH = window.innerWidth, HEIGHT = window.innerHeight;
 	 renderer.setSize(WIDTH, HEIGHT);
 	 camera.aspect = WIDTH / HEIGHT;
-	 camera.updateProjectMatrix();
+	 //camera.updateProjectMatrix();
 	 });
 	
 	var lightOne= new THREE.AmbientLight(0xfffff, 0.5);
@@ -41,11 +41,11 @@ function init() {
 
 	});
 
-	requestAnimationFrame(render);
+	/*requestAnimationFrame(render);
 	function render() {
 		renderer.render(scene, camera);
 		requestAnimationFrame(render);
-	}
+	}*/
 	controls = new THREE.OrbitControls(camera,renderer.domElement);
 }
 
