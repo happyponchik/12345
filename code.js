@@ -38,7 +38,7 @@ function init() {
 				}
 			})
 			scene.add(mesh);
-			mesh.position.set(-200, 50, -100);
+			mesh.position.set(-200, 0, -100);
 			mesh.rotation.y = -Math.PI/4;
 
 	});
